@@ -1,3 +1,79 @@
+:root{
+    --background-color: rgb(7, 130, 201);
+}
 body{
-    background-color: red;
+    background-color: white;
+    font-family: "Playfair Display",sans-serif, system-ui;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+header{
+    margin-bottom: 300px;
+    position: relative;
+}
+.header-background{
+    width: 0;
+    height: 0;
+    border-top: 0px solid transparent;
+    border-left: 2700px solid var(--background-color);
+    border-bottom: 80vh solid transparent;
+}
+.header-content{
+    position: absolute;
+    transform: translateX(-50%) translateY(-50%);
+    top: 50%;
+    left: 50%;
+    display: flex;
+}
+.header-img{
+    width: 600px;
+    object-fit: contain;
+}
+.text-title{
+    font-weight: 400;
+    font-size: 3.4rem;
+    margin: 0;
+    color: black;
+}
+.header-text{
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    flex: 1;
+    margin: 40px 0;
+    background-color: #faf9f9;
+    padding: 40px 30px;
+    gap: 20px;
+    color: rgba(0, 0, 0, 0.801);
+    -webkit-box-shadow: 0px 0px 34px -19px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 0px 0px 34px -19px rgba(66, 68, 90, 1);
+    box-shadow: 0px 0px 34px -19px rgba(66, 68, 90, 1);
+}
+.link-list{
+    align-self: flex-end;
+}
+.link-list svg {
+    width: 50px;
+    margin: 5px;
+}
+main{
+    padding: 0 80px;
+}
+.main-header{
+    font-size: 2.3rem;
+    font-weight: 600;
+}
+.card-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px,1fr));
+    gap: 48px;
+}
+.card{
+    border: 1px solid black;
+    height: 400px;
+}
+.footer{
+
 }
