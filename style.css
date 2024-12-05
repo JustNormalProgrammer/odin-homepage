@@ -104,6 +104,7 @@ main{
 }
 .card{
     border: 1px solid black;
+    text-align: justify;
 }
 .card-img{
     width: 100%;
@@ -170,6 +171,9 @@ main{
     }
 }
 @media (max-width: 1430px) {
+    body{
+        gap: 50px;
+    }
     main{
         padding: 20px;
     }
@@ -182,7 +186,8 @@ main{
         margin:0 40px;
     }
     .header-img-container img {
-        width: 70vw;
+        width: 50vw;
+        height: auto;
     }
     .card-list{
         grid-template-columns: 1fr;
